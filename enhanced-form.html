@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML5 Showcase: Smart Forms & Multimedia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+</head>
+<body>
+
+<header>
+  <h1>HTML5 Showcase</h1>
+  <p>Lists, Tables, Media & Smart Forms — All in One</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Creative Lists</h2>
+    <h3>Steps to Launch a Website</h3>
+    <ol type="A">
+      <li>Choose a domain</li>
+      <li>Design your layout</li>
+      <li>Write semantic HTML</li>
+      <li>Publish and promote</li>
+    </ol>
+
+    <h3>Essentials in a Developer's Toolkit</h3>
+    <ul type="square">
+      <li>Code Editor (VS Code)</li>
+      <li>Browser DevTools</li>
+      <li>Version Control (Git)</li>
+      <li>AI Assistants (ChatGPT, Copilot)</li>
+    </ul>
+
+    <h3>Web Terms</h3>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+      <dt>SEO</dt>
+      <dd>Search Engine Optimization</dd>
+      <dt>API</dt>
+      <dd>Application Programming Interface</dd>
+    </dl>
+
+    <h3>Nested Example</h3>
+    <ul>
+      <li>Fruits
+        <ul>
+          <li>Mango</li>
+          <li>Banana</li>
+        </ul>
+      </li>
+      <li>Vegetables
+        <ul>
+          <li>Kale</li>
+          <li>Carrot</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Pricing Comparison Table</h2>
+    <table>
+      <caption>Monthly Subscription Plans</caption>
+      <thead>
+        <tr>
+          <th>Plan</th>
+          <th>Price</th>
+          <th>Features</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Starter</td>
+          <td>$5</td>
+          <td>1 project, basic support</td>
+        </tr>
+        <tr>
+          <td>Pro</td>
+          <td>$15</td>
+          <td>10 projects, priority support</td>
+        </tr>
+        <tr>
+          <td>Enterprise</td>
+          <td>$50</td>
+          <td>Unlimited projects, 24/7 support</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media Gallery</h2>
+    <img src="image1.jpg" alt="Laptop showing responsive web design" />
+    <img src="image3.jpg" alt="Code editor with HTML code on screen" />
+    <img src="image2.jpg" alt="A clean digital workspace with coffee and notebook" />
+
+    <h3>Listen to this tune</h3>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Watch the demo</h3>
+    <video controls width="640" height="360" poster="https://via.placeholder.com/640x360?text=Video+Preview">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <section>
+    <h2>Smart HTML5 Contact Form</h2>
+    <form action="#" method="POST" autocomplete="on">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required placeholder="e.g., Jane Doe" />
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="example@mail.com" />
+
+        <label for="phone">Phone Number (Kenyan)</label>
+        <input type="tel" id="phone" name="phone" pattern="^\+254[0-9]{9}$" placeholder="+254712345678" title="Must start with +254 followed by 9 digits" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Message</legend>
+        <label for="subject">Subject *</label>
+        <input type="text" id="subject" name="subject" required minlength="4" maxlength="50" />
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required rows="4" placeholder="Write your message here..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Other Info</legend>
+        <label for="ref">Referral Code</label>
+        <input type="text" id="ref" name="ref" readonly value="2025" />
+
+        <label for="country">Country *</label>
+        <select name="country" id="country" required>
+          <option value="">--Select Country--</option>
+          <option value="Kenya">Kenya</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 HTML5 Smart Page</p>
+</footer>
+
+</body>
+</html>
